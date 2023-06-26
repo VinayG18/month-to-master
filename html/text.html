@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paragraph, Headline, Small Texts, Subscripts & Superscripts</title>
+    <!-- External Style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 
+        Not much use below method because of page load time consuming method
+     -->
+    <style>
+        @import url('../css/style.css');
+    </style>
+
+    <!-- Internal CSS -->
+    <style>
+        p {
+            background-color: blue;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <!-- External, Inline & Internal CSS -->
     <!--
         In old version use <b></b> tag to bold text
         In new version use <strong></strong> tag to bold text
@@ -18,7 +35,8 @@
 
     <!-- Headline -->
     <h1>Welcome to the bootcamp!</h1>
-    <h2>Welcome to the bootcamp!</h2>
+    <!-- Inline CSS -->
+    <h2 style="color: red;">Welcome to the bootcamp!</h2>
     <h3>Welcome to the bootcamp!</h3>
     <h4>Welcome to the bootcamp!</h4>
     <h5>Welcome to the bootcamp!</h1>
