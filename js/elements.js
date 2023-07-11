@@ -64,3 +64,10 @@ let setattribute = document
 let removeattribute = document
 	.querySelector("img")
 	.removeAttribute("src", "../assets/1-plant.png");
+
+// Modifying Inline Style in JS
+let footer = document.querySelector("footer").style;
+console.log(footer);
+
+let footerstyle = (document.querySelector("footer").style.backgroundColor =
+	"purple");
