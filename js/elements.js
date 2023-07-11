@@ -45,3 +45,22 @@ let methodone = document.querySelector("main p").classList.add("newclass");
 let methodthree = document
 	.querySelector("main p")
 	.classList.replace("newclass", "oldclass");
+
+//Modifying the elements & attributes in JS
+
+let attribute = document.querySelector("img").attributes;
+console.log(attribute);
+
+let hasattribute = document.querySelector("img").hasAttribute("border");
+console.log(hasattribute);
+
+let getattribute = document.querySelector("img").getAttribute("src");
+console.log(getattribute);
+
+let setattribute = document
+	.querySelector("img")
+	.setAttribute("src", "../assets/1-plant.png");
+
+let removeattribute = document
+	.querySelector("img")
+	.removeAttribute("src", "../assets/1-plant.png");
