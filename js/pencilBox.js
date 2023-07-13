@@ -23,6 +23,13 @@ class pencilBox {
 	toggleZip(zipStatus) {
 		this.zipOpen = zipStatus;
 	}
+    pencilBoxAge() {
+		let now = new Date();
+		let purchased = new Date(this.datePurchased);
+		let time = now - purchased;
+		let daysSincePurchased = Math.floor(time / (1000 * 3600 * 24));
+		return daysSincePurchased;
+	}
 }
 
 export default pencilBox;
