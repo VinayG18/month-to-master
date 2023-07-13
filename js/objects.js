@@ -14,3 +14,9 @@ const pencilbox = {
 };
 
 console.log(pencilbox);
+
+console.log(pencilbox.color);
+console.log(pencilbox.zipLength.left);
+
+var sizeValue = "size";
+console.log(pencilbox[sizeValue]);
