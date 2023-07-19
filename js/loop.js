@@ -48,4 +48,15 @@ for (const singleObject in nestedObjects) {
 	arrayList.append(listItem);
 }
 
+// map() method (for arrays)
+const listItems = array.map((item) => {
+	let listItem = document.createElement("li");
+	listItem.innerHTML = item;
+	return listItem;
+});
+
+listItems.forEach((item) => {
+	arrayList.append(item);
+});
+
 document.body.append(arrayList);
