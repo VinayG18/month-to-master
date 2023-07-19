@@ -32,3 +32,26 @@ console.log("Size:", newPencilBox.size);
 
 console.log("Date Purchased:", newPencilBox.datePurchased);
 console.log("Date Purchased:", newPencilBox.pencilBoxAge());
+
+// if (newPencilBox.zipOpen === true || newPencilBox.size === 20) {
+// 	console.log("Yes");
+// } else {
+// 	console.log("No");
+// }
+
+let size = 30;
+let boxSize;
+
+switch (true) {
+	case size > 30:
+		boxSize = "large";
+		break;
+	case size <= 30 && size >= 20:
+		boxSize = "medium";
+		break;
+	case size <= 19 && size >= 10:
+		boxSize = "small";
+}
+
+console.log("Box Size:", size);
+console.log("Status:", boxSize);
