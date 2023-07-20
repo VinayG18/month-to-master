@@ -20,12 +20,29 @@ const content = `
             <li>Zip Length Left: ${newPencilBox.zipLength.left}</li>
             <li>Zip Length Right: ${newPencilBox.zipLength.right}</li>
             <li>Zip Length Top: ${newPencilBox.zipLength.top}</li>
-            <li class="status"> ${newPencilBox.zipOpen}</li>
+            <li class="status"> ${
+				newPencilBox.zipOpen ? "The zip is open" : "The zip is closed"
+			}</li>
         </ul>
+		<button>Open the zip</button>
     </main>
 `;
 
 document.body.innerHTML = content;
+
+/* Add Event Listeners */
+const button = document.querySelector("button");
+const status = document.querySelector(".status");
+
+button.addEventListener("click", () => {
+	status.innerText === "The zip is open"
+		? (status.innerText = "The zip is closed")
+		: (status.innerText = "The zip is open");
+
+	button.innerText === "Open the zip"
+		? (button.innerText = "Close the zip")
+		: (button.innerText = "Open the zip");
+});
 
 console.log("The Pencil Box Object:", newPencilBox);
 console.log("Size:", newPencilBox.size);
